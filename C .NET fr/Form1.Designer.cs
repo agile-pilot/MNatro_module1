@@ -28,57 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.text = new System.Windows.Forms.Label();
+            this.buttonGreet = new System.Windows.Forms.Button();
+            this.labelGreetingOutput = new System.Windows.Forms.Label();
             this.textboxUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.greeting = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonGreet
             // 
-            this.button1.Location = new System.Drawing.Point(392, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ok";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonGreet.Location = new System.Drawing.Point(523, 140);
+            this.buttonGreet.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGreet.Name = "buttonGreet";
+            this.buttonGreet.Size = new System.Drawing.Size(100, 28);
+            this.buttonGreet.TabIndex = 0;
+            this.buttonGreet.Text = "ok";
+            this.buttonGreet.UseVisualStyleBackColor = true;
+            this.buttonGreet.Click += new System.EventHandler(this.button1_Click);
             // 
-            // text
+            // labelGreetingOutput
             // 
-            this.text.AutoSize = true;
-            this.text.Location = new System.Drawing.Point(450, 31);
-            this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(54, 15);
-            this.text.TabIndex = 1;
-            this.text.Text = "user see";
-            this.text.Click += new System.EventHandler(this.text_Click);
+            this.labelGreetingOutput.AutoSize = true;
+            this.labelGreetingOutput.Location = new System.Drawing.Point(600, 38);
+            this.labelGreetingOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelGreetingOutput.Name = "labelGreetingOutput";
+            this.labelGreetingOutput.Size = new System.Drawing.Size(59, 16);
+            this.labelGreetingOutput.TabIndex = 1;
+            this.labelGreetingOutput.Text = "user see";
+            this.labelGreetingOutput.Click += new System.EventHandler(this.text_Click);
             // 
             // textboxUsername
             // 
-            this.textboxUsername.Location = new System.Drawing.Point(392, 88);
+            this.textboxUsername.Location = new System.Drawing.Point(523, 108);
+            this.textboxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textboxUsername.Name = "textboxUsername";
-            this.textboxUsername.Size = new System.Drawing.Size(100, 20);
+            this.textboxUsername.Size = new System.Drawing.Size(132, 22);
             this.textboxUsername.TabIndex = 2;
             // 
-            // label1
+            // greeting
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(389, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "greeting:";
+            this.greeting.AutoSize = true;
+            this.greeting.Location = new System.Drawing.Point(519, 38);
+            this.greeting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.greeting.Name = "greeting";
+            this.greeting.Size = new System.Drawing.Size(59, 16);
+            this.greeting.TabIndex = 3;
+            this.greeting.Text = "greeting:";
+            this.greeting.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.greeting);
             this.Controls.Add(this.textboxUsername);
-            this.Controls.Add(this.text);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelGreetingOutput);
+            this.Controls.Add(this.buttonGreet);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -88,10 +94,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.Button buttonGreet;
+        private System.Windows.Forms.Label labelGreetingOutput;
         private System.Windows.Forms.TextBox textboxUsername;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label greeting;
     }
 }
 
