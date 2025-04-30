@@ -45,11 +45,16 @@ namespace C.NET_fr
             // {target where we are going to save value} 
             // {target where we are going to save value} 
             //{ source where we are going to get value from}
-            text.Text = greeting;
+            labelGreetingOutput.Text = greeting;
 
         }
 
         private void text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
